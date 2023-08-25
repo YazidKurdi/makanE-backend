@@ -14,7 +14,7 @@ class FoodCategoryList(generics.ListAPIView):
 class MenuItemDetail(generics.RetrieveAPIView):
     queryset = MenuItem.objects.all()
     serializer_class = MenuItemSerializer
-    lookup_field = 'name'
+    lookup_field = 'slug'
 
 
 class MenuItemSearch(ListAPIView):
